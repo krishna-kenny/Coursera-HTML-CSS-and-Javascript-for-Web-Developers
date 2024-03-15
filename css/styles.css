@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    margin: 20px;
+}
+
+.sectionContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section {
+    padding: 20px;
+    margin: 2%;
+    border: 1px solid black;
+    position: relative;
+    background-color: aliceblue;
+}
+
+.secHead {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 1px solid black;
+    padding: 5px;
+    font-size: 175%;    
+}
+
+article {
+    padding-top: 50px;
+    font-size: 125%;
+}
+
+#sec1 {
+    background-color: rgb(255, 145, 145);
+}
+#sec2 {
+    background-color: rgb(210, 255, 142);
+}
+#sec3 {
+    background-color: rgb(141, 141, 255);
+}
+
+
+@media (min-width: 0px) and (max-width: 767px) {
+    section.mobile-size {
+        width: 96%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    section.tablet-size {
+        width: 46%;
+    }
+}
+
+@media (min-width: 992px) {
+    section.desktop-size {
+        width: 29.33%;
+    }
+}
